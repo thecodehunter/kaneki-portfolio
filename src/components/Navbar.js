@@ -2,12 +2,8 @@ import styled from "styled-components"
 
 const Navbar = () => (
     <NavbarWrapper>
-
-       <NavLeftContainer>
-           <Logo />
-       </NavLeftContainer>
-
-        <NavRightContainer>
+        <Logo />
+        <NavItemsContainer>
             <NavItem>
                 <NavLink>
                     Home
@@ -23,8 +19,7 @@ const Navbar = () => (
                     Contact
                 </NavLink>
             </NavItem>
-        </NavRightContainer>
-
+        </NavItemsContainer>
     </NavbarWrapper>
 )
 
@@ -38,7 +33,6 @@ const NavLink = styled.a`
     color: white;
 `
 
-
 const NavbarWrapper = styled.div`
     display: flex;
     background-color: black;
@@ -47,13 +41,8 @@ const NavbarWrapper = styled.div`
     height: 24px;
     justify-content: space-between;
 `
-const NavLeftContainer = styled.div`
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-`
 
-const NavRightContainer = styled.div`
+const NavItemsContainer = styled.div`
     display: flex;
     min-width: 200px;
     align-items: center;
