@@ -1,39 +1,37 @@
 import Card from "../components/Card";
 import Kaneki from "../assets/kaneki1.jpg";
+import Col from "../components/Col";
+
+const TechnologySection = () => (
+    <Card>
+        <Col>
+            <img alt={"Kaneki"} src={Kaneki} style={styles.portrait} />
+        </Col>
+        <Col>
+            <h1>Technology</h1>
+            <ul>
+                <li>
+                    React
+                </li>
+                <li>
+                    Javascript
+                </li>
+                <li>
+                    NodeJS
+                </li>
+                <li>
+                    Sales
+                </li>
+            </ul>
+        </Col>
+    </Card>
+)
 
 const styles = {
-    column: {
-        width: "50%",
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column"
+    portrait: {
+        objectFit: "contain",
+        maxHeight: 500
     }
 }
 
-const TechnologySection = () => (
-    <>
-        <Card>
-            <div style={styles.column}>
-                <img src={Kaneki} style={{objectFit: "contain", maxHeight: 500}} />
-            </div>
-            <div style={styles.column}>
-                <h1>Technology</h1>
-                <ul>
-                    <li>
-                        React
-                    </li>
-                    <li>
-                        Javascript
-                    </li>
-                    <li>
-                        NodeJS
-                    </li>
-                    <li>
-                        Sales
-                    </li>
-                </ul>
-            </div>
-        </Card>
-    </>
-)
 export default TechnologySection

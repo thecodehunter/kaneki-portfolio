@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import MainSection from "./sections/MainSection";
 import TechnologySection from "./sections/TechnologySection";
 import React from "react";
+import BlogSection from "./sections/BlogSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <MainSection />
       <TechnologySection />
+      <BlogSection />
     </div>
   );
 }

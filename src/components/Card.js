@@ -4,7 +4,7 @@ const Card = styled.div`
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  padding: 10px;
+  padding: 25px;
   margin: 10px;
 `
 

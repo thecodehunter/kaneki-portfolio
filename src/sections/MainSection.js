@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import homeVideo from "../assets/home.mp4"
+import Button from "../components/Button";
 
 const MainSection = () => (
     <SectionContainer>
@@ -10,8 +11,8 @@ const MainSection = () => (
                 Full Stack Developer / Game Designer / Software Engineer
             </Details>
             <div>
-                <Button>Check me out</Button>
-                <Button>Get in contact</Button>
+                <Button theme={"dark"}>Check me out</Button>
+                <Button theme={"dark"}>Get in contact</Button>
             </div>
         </OverlayContent>
     </SectionContainer>
@@ -28,13 +29,6 @@ const styles = {
 const Details = styled.p`
     display: flex;
     font-size: 12px;
-`
-
-const Button = styled.button`
-    background: black;
-    color: white;
-    height: 44px;
-    margin: 10px;
 `
 
 const OverlayContent = styled.div`
