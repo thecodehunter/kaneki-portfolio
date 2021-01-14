@@ -3,7 +3,6 @@ import homeVideo from "../assets/home.mp4";
 import Button from "../components/Button";
 
 const MainSection = () => (
-  // Here are some random changes I am making to test my pull request
   <SectionContainer>
     <video
       style={styles.video}
@@ -13,29 +12,48 @@ const MainSection = () => (
       muted={true}
     />
     <OverlayContent>
-      <h1>KANEKI RAMOS</h1>
+      <Title>KANEKI RAMOS</Title>
       <Details>
         Full Stack Developer / Game Designer / Software Engineer
       </Details>
-      <div>
-        <Button theme={"dark"}>Check me out</Button>
-        <Button theme={"dark"}>Get in contact</Button>
-      </div>
+      <ButtonWrapper>
+        <Button style={styles.Button}>Check me out</Button>
+        <Button style={styles.Button}>Get in contact</Button>
+      </ButtonWrapper>
     </OverlayContent>
   </SectionContainer>
 );
 
 const styles = {
   video: {
-    objectFit: "fill",
-    height: "400px",
-    width: "100%",
+    objectFit: "cover",
+    height: "100vh",
+    width: "100vw",
+  },
+
+  Button: {
+    border: "2px solid",
+    padding: "5px 24px 16px 24px",
+    backgroundColor: "transparent",
+    borderRadius: "5px",
+    color: "white",
+    cursor: "pointer",
+    transition: "all 0.3s ease-out",
   },
 };
 
-const Details = styled.p`
+const Title = styled.h1`
+  font-size: 105px;
+  margin-top: -250px;
+`;
+
+const Details = styled.h2`
+  font-size: 45px;
+  margin-top: -60px;
+`;
+
+const ButtonWrapper = styled.div`
   display: flex;
-  font-size: 12px;
 `;
 
 const OverlayContent = styled.div`
@@ -48,11 +66,13 @@ const OverlayContent = styled.div`
 `;
 
 const SectionContainer = styled.div`
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 100vh;
+  width: 100%;
 `;
 
 export default MainSection;

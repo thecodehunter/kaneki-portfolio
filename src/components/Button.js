@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const THEME = {
-    DARK: "dark",
-    LIGHT: "light"
-}
+  DARK: "dark",
+  LIGHT: "light",
+};
 
 /*
 const Button = (props) => {
@@ -13,11 +13,12 @@ const Button = (props) => {
  */
 
 const Button = styled.button`
-    background: ${(props) => props.theme === THEME.DARK ? "black" : "white"};
-    color: ${(props) => props.theme === THEME.DARK ? "white" : "black"};
-    height: 44px;
-    margin: 10px;
-    width: ${(props) => props.width ? `${props.width}px` : "100%"};
-`
+  background: ${(props) => (props.theme === THEME.DARK ? "black" : "white")};
+  color: ${(props) => (props.theme === THEME.DARK ? "white" : "black")};
+  height: 44px;
+  margin: 10px;
+  font-size: 24px;
+  width: ${(props) => (props.width ? `${props.width}px` : "100%")};
+`;
 
-export default Button
+export default Button;

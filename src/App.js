@@ -1,9 +1,11 @@
-import './App.css';
+import "./App.css";
 import Header from "./components/Header";
 import MainSection from "./sections/MainSection";
 import TechnologySection from "./sections/TechnologySection";
 import React from "react";
 import BlogSection from "./sections/BlogSection";
+import ContactSection from "./sections/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <MainSection />
       <TechnologySection />
       <BlogSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
